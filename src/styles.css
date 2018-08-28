@@ -14,3 +14,7 @@
 app-guest-list, app-guest-data, app-guest-create{
     width: 100%;
 }
+
+app-guest-data{
+    margin-right: 15px
+}

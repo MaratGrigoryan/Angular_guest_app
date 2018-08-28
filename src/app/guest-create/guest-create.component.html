@@ -29,6 +29,6 @@
     <textarea matInput placeholder="About him/her" formControlName="textarea"></textarea>
   </mat-form-field>
 
-  <button mat-raised-button >Add guest!</button>
-  <!-- [disabled]="!guestForm.valid" -->
+  <button mat-raised-button [disabled]="!guestForm.valid">Add guest!</button>
+  
 </form>
