@@ -1,0 +1,34 @@
+<h2>Create Guest</h2>
+<form class="example-container" [formGroup]="guestForm" (ngSubmit)="onSubmit()">
+  <mat-form-field>
+    <input matInput placeholder="FirstName" formControlName="firstName">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="LastName" formControlName="lastName">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="Enter your email" formControlName="email">
+    <mat-error></mat-error>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="Age" formControlName="age">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="Relative" formControlName="relative">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="Address" formControlName="address">
+  </mat-form-field>
+
+  <mat-form-field>
+    <textarea matInput placeholder="About him/her" formControlName="textarea"></textarea>
+  </mat-form-field>
+
+  <button mat-raised-button >Add guest!</button>
+  <!-- [disabled]="!guestForm.valid" -->
+</form>

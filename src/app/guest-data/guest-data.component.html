@@ -1,0 +1,30 @@
+<h2>Guest Data</h2>
+<pre>
+  {{myGuestData}}
+</pre>
+<mat-card class="example-card" *ngFor="let data of myGuestData">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{ data.firstName }} {{ data.lastName }}</mat-card-title>
+    <mat-card-subtitle>{{ data.relative }}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-list>
+      <mat-list-item>
+        Email: {{data.email}}
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        Age: {{data.age}}
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        Address: {{data.address}}
+      </mat-list-item>
+      <mat-divider></mat-divider>
+    </mat-list>
+    <p>
+      {{ data.textarea }}
+    </p>
+  </mat-card-content>
+</mat-card>

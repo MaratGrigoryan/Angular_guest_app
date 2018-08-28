@@ -1,0 +1,7 @@
+<h2>Guest List</h2>
+<mat-list *ngFor="let arr of myGuestList;let i = index">
+  <mat-list-item (click) = "openGuest(arr)">
+   <b>{{ i + 1 }}. </b>   {{ arr.firstName }} {{ arr.lastName }}
+  </mat-list-item>
+  <mat-divider></mat-divider>
+</mat-list>

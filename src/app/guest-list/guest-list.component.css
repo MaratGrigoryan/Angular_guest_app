@@ -1,0 +1,7 @@
+h2{
+    text-align: center;
+}
+mat-list:hover{
+  background: gray;
+  cursor: pointer;
+}
